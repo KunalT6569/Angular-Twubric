@@ -1,0 +1,47 @@
+:host {
+  width: 100%;
+}
+
+.sort-header {
+  display: flex;
+  min-width: 25%;
+}
+
+.sort-button {
+  background: #459b45;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    background: #5CB85C;
+  }
+}
+
+.order {
+  display: none;
+  position: absolute;
+  right: 10px;
+}
+
+.active .order {
+  display: block;
+}
+
+
+.date-filter {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #efefef;
+
+  input {
+    margin: 0 10px;
+  }
+}

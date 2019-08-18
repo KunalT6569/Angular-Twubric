@@ -1,0 +1,12 @@
+<div class="sort-header">
+  <div class="sort-button" *ngFor="let sortItem of sortItems" [ngClass]="{ active: selectedFilter === sortItem.key }"
+    (click)="emitSort(sortItem.key)">
+    <span>{{ sortItem.title }}</span>
+    <span class="fas fa-arrow-down order" *ngIf="sortingOrder === 'asc'"></span>
+    <span class="fas fa-arrow-up order" *ngIf="sortingOrder === 'desc'"></span>
+  </div>
+</div>
+<div class="date-filter">
+  <input placeholder="Start Date" bsDatepicker [(ngModel)]="startDate" (bsValueChange)="onStartDateChange($event)">
+  <input placeholder="End Date" bsDatepicker [(ngModel)]="endDate" (bsValueChange)="onEndDateChange($event)">
+</div>

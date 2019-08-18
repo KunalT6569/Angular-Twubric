@@ -1,0 +1,94 @@
+:host {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.user-container {
+  min-width: 600px;
+
+  &:hover {
+    -webkit-box-shadow: 6px 7px 12px -5px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 6px 7px 12px -5px rgba(0, 0, 0, 0.54);
+    box-shadow: 6px 7px 12px -5px rgba(0, 0, 0, 0.54);
+  }
+}
+
+.user-header {
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #e5f3e5;
+  border: 1px solid #000;
+}
+
+.user-fullname {
+  font-weight: 600;
+}
+
+.user-twubric-scores {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+}
+
+.twubric-score {
+  border-right: 1px solid #000;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+
+  &:first-of-type {
+    border-left: 1px solid #000;
+  }
+}
+
+.twubric-score-total {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.twubric-score-single {
+  font-size: 40px;
+}
+
+.user-action-bar {
+  border: 1px solid #000;
+  border-top: none;
+  display: flex;
+  background-color: #e5f3e5;
+
+  .date-created {
+    justify-content: center;
+    display: flex;
+    width: 33.3%;
+    padding: 10px 0;
+  }
+
+  .user-action {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+}
+
+.remove-user {
+  .remove-label {
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 14px;
+
+  }
+
+  &:hover {
+    color: #666;
+    cursor: pointer;
+  }
+}

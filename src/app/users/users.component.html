@@ -1,0 +1,6 @@
+<app-filter (onSortChanged)="updateOrder($event)" (onDateChanged)="dateChanged($event)"></app-filter>
+<div class="users-container">
+    <div *ngFor="let user of filterApplied ? filteredUsers : users">
+        <app-user-detail [user]="user" (onRemoveUser)="removeUser(user)"></app-user-detail>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="user-container">
+    <div class="user-header">
+        <span class="user-fullname">{{ user.fullname }}</span>
+        <span class="twubric-score-total">{{ user.twubric.total }}</span>
+    </div>
+
+    <div class="user-twubric-scores">
+        <div class="twubric-score">
+            <span class="twubric-score-single">{{ user.twubric.friends }}</span>
+            <span>Friends</span>
+        </div>
+        <div class="twubric-score">
+            <span class="twubric-score-single">{{ user.twubric.influence }}</span>
+            <span>Influence</span>
+        </div>
+        <div class="twubric-score">
+            <span class="twubric-score-single">{{ user.twubric.chirpiness }}</span>
+            <span>Chirpiness</span>
+        </div>
+    </div>
+
+    <div class="user-action-bar">
+        <div class="date-created">{{ user.join_date*1000 | date:'mediumDate' }}</div>
+        <div class="user-action">
+            <div class="remove-user" (click)="removeUser()">
+                <span class="remove-label">Remove</span>
+                <i class="fas fa-trash"></i>
+            </div>
+        </div>
+    </div>
+</div>
